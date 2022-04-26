@@ -47,4 +47,17 @@ E dependendo das sua configurações de ESLint é necessário permitir o `jest/g
     },
 }
 ```
-Referência tirada do artigo do [Eduardo Rabelo](https://oieduardorabelo.medium.com/jest-babel-e-typescript-configurando-testes-para-seu-projeto-201f001f45ef)
+
+*Obs: Caso esteja com problemas com o ESLint (`Eslint jest/globals environment key unknown`) basta instalar o plugin do jest para o eslint, da seguinte maneira:  
+  
+```bash
+npm i --save-dev eslint-plugin-jest
+```
+
+E então no arquivo `.eslintrc` adicionar o "jest" aos plugins: `plugins:["jest"]`
+
+## Referências 
+
+Referência tirada do artigo do [Eduardo Rabelo](https://oieduardorabelo.medium.com/jest-babel-e-typescript-configurando-testes-para-seu-projeto-201f001f45ef). 
+  
+[Erro com ESLint (StackOverflow)](https://stackoverflow.com/questions/58065765/eslint-jest-globals-environment-key-unknown). 
